@@ -193,8 +193,10 @@ library(leaflet)
 library (ggplot2)
 
 
-pie=PieDonut(data1, aes(s,  count=t), r0=.5, showPieName=FALSE, color="transparent") +
-  theme(panel.background = element_rect(fill = '#ecf0f5'))
+pie=PieDonut(data1, aes(s,  count=t), r0=.5, showPieName=FALSE) +
+  theme(panel.background = element_rect(fill = '#ecf0f5', colour='#ecf0f5'),
+        plot.background = element_rect(fill = "#ecf0f5",colour='#ecf0f5' ))
+
 
 ### Valores totales
 
